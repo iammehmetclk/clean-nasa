@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ToolbarView">
+        <attr name="toolbar_view_title" format="string" />
+        <attr name="toolbar_view_right_icon" format="reference" />
+        <attr name="toolbar_view_left_icon" format="reference" />
+    </declare-styleable>
+
+</resources>

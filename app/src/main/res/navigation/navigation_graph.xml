@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.nasa.presentation.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@+id/fragment_detail" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="com.nasa.presentation.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <argument
+            android:name="arg_detail"
+            app:argType="com.nasa.domain.model.Content"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>
